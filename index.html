@@ -47,20 +47,24 @@
       <div class="container">
         <!-- Change path logo here -->
         <div class="logo left">
-          <a href="/">
+          <a href="/" class="flex">
             <img src="assets/img/ak-logo.png" />
+            <img src="assets/logos/logo-gray.svg" class="logo-planmed-header" />
           </a>
         </div>
         <div class="menu right">
-          <a class="primary-btn small light-grey t-blue-vibrant" href="#about"
-            >ACTIVA BENEFICIOS</a
+          <a
+            class="primary-btn small light-grey t-blue-vibrant"
+            href="formulario.html"
+            ><i class="fa fa-check-square-o" aria-hidden="true"></i> ACTIVA
+            BENEFICIOS</a
           >
         </div>
       </div>
     </header>
 
     <!-- Section -->
-    <div id="start" class="section light-grey back one">
+    <div id="start" class="section light-grey back one flex-sm-row-reverse">
       <div class="container">
         <div class="content row">
           <div
@@ -68,7 +72,10 @@
             data-aos="fade-right"
             data-aos-anchor-placement="center-bottom"
           >
-            <h3>
+            <h2 class="d-none d-sm-block t-blue-two">
+              ¡Ahora puedes cuidar tu salud sin salir de casa!
+            </h2>
+            <h3 class="d-none d-sm-block">
               <mark class="light-yellow">Beneficios exclusivos</mark> para
               socios conductores y socios repartidores registrados en la app de
               Uber.
@@ -79,12 +86,14 @@
               queridos, sin tener que salir de casa.
             </h5>
             <div class="cta-container">
-              <a href="/" class="primary-btn blue-vibrant t-white"
-                ><i class="fab fa-cart" aria-hidden="true"></i>Activa
+              <a href="/" class="primary-btn t-white"
+                ><i class="fa fa-check-square-o" aria-hidden="true"></i>Activa
                 Beneficios</a
               >
-              <a href="/" class="primary-line-btn b-blue-vibrant t-blue-vibrant"
-                ><i class="fab fa-plus" aria-hidden="true"></i>Conocer
+              <a
+                href="#beneficios"
+                class="primary-line-btn b-blue-vibrant t-blue-vibrant"
+                ><i class="fa fa-plus-square-o" aria-hidden="true"></i>Conocer
                 Beneficios</a
               >
             </div>
@@ -95,6 +104,20 @@
             data-aos-anchor-placement="center-bottom"
           >
             <div class="app-container">
+              <img
+                src="assets/logos/logo-gray.svg"
+                class="d-xl-none"
+                alt="Planmed®"
+                style="max-width: 64%"
+              />
+              <h2 class="d-xl-none t-blue-two">
+                ¡Ahora puedes cuidar tu salud sin salir de casa!
+              </h2>
+              <h3 class="d-xl-none">
+                <mark class="light-yellow">Beneficios exclusivos</mark> para
+                socios conductores y socios repartidores registrados en la app
+                de Uber.
+              </h3>
               <div id="nav-item" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li
@@ -108,22 +131,22 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img
-                      src="./assets/app-1.png"
-                      alt="Lancio"
+                      src="./assets/img/app-1.png"
+                      alt="Video consultas médicas"
                       class="img-fluid"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="./assets/app-2.png"
-                      alt="Lancio"
+                      src="./assets/img/app-2.png"
+                      alt="Descuentos en farmacias"
                       class="img-fluid"
                     />
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="./assets/app-3.png"
-                      alt="Lancio"
+                      src="./assets/img/app-3.png"
+                      alt="30% en Consultas"
                       class="img-fluid"
                     />
                   </div>
@@ -136,25 +159,19 @@
     </div>
     <!-- Section Ends -->
 
-    <!-- Section -->
-    <div class="section light-grey">
+    <!-- Section Beneficios -->
+    <div class="section light-grey" id="beneficios">
       <div class="container">
         <div class="content row center">
           <div
-            class="col-lg-3 aos-init"
+            class="col-lg-12 aos-init"
             data-aos="fade-down"
             data-aos-anchor-placement="center-bottom"
           >
-            <div class="info-box">
-              <div class="t-blue-vibrant">
-                <i class="far fa-clone" aria-hidden="true"></i>
-              </div>
-              <h4>30% de Descuento en Consultas</h4>
-              <p>
-                Disfruta de consultas subsecuentes con el 30% de descuento
-              </p>
-            </div>
+            <h1 style="margin-bottom: 3rem">Tendrás estos beneficios</h1>
           </div>
+        </div>
+        <div class="content row center">
           <div
             class="col-lg-3 aos-init"
             data-aos="fade-up"
@@ -162,7 +179,7 @@
           >
             <div class="info-box white">
               <div class="t-blue-vibrant">
-                <i class="fas fa-code" aria-hidden="true"></i>
+                <img src="assets/icons/001-video.svg" width="50px" />
               </div>
               <h4>4 videoconsultas al año con médico general y/o pediatra.</h4>
               <p>
@@ -176,9 +193,22 @@
             data-aos="fade-down"
             data-aos-anchor-placement="center-bottom"
           >
+            <div class="info-box">
+              <div class="t-blue-vibrant">
+                <img src="assets/icons/004-descuento.svg" width="50px" />
+              </div>
+              <h4>30% de Descuento<br />en Consultas</h4>
+              <p>Disfruta de consultas subsecuentes con el 30% de descuento</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 aos-init"
+            data-aos="fade-down"
+            data-aos-anchor-placement="center-bottom"
+          >
             <div class="info-box white">
               <div class="t-blue-vibrant">
-                <i class="fas fa-fill-drip" aria-hidden="true"></i>
+                <img src="assets/icons/002-farmacia.svg" width="50px" />
               </div>
               <h4>Descuentos en farmacias</h4>
               <p>
@@ -194,7 +224,7 @@
           >
             <div class="info-box">
               <div class="t-blue-vibrant">
-                <i class="fas fa-fill-drip" aria-hidden="true"></i>
+                <img src="assets/icons/003-covid.svg" width="50px" />
               </div>
               <h4>Vinculación a prueba de Covid-19</h4>
               <p>
@@ -209,6 +239,49 @@
     <!-- Section Ends -->
 
     <!-- Section -->
+    <div class="section dark back three">
+      <div class="container">
+        <div class="content row flex-xs-row-reverse">
+          <div
+            class="col-lg-6 aos-init"
+            data-aos="fade-left"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <h1 class="t-white">
+              ¡Habla con un doctor
+              <span class="t-blue-vibrant">sin salir de casa</span>!
+            </h1>
+            <h5 class="t-white">
+              Si activas tus beneficios, podrás acceder a nuestra nueva
+              modalidad de cuatro videoconsultas y chatbot de COVID-19 para que
+              cuides tu salud sin salir de casa.<br />¡Cuidemos la salud de
+              todos en estos momentos!
+            </h5>
+            <div class="cta-container">
+              <a
+                href="https://axakeralty.mx/home"
+                target="_blank"
+                class="primary-btn"
+                ><i class="fa fa-check-square-o" aria-hidden="true"></i>Activar
+                beneficios</a
+              >
+            </div>
+          </div>
+          <div
+            class="col-lg-6 aos-init"
+            data-aos="fade-right"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <span class="align-middle"
+              ><img src="./assets/img/app-1.png" alt="Lancio" class="img-fluid"
+            /></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section Ends -->
+
+    <!-- Section Lupita -->
     <div class="section light-grey back two">
       <div class="container">
         <div class="content row">
@@ -218,7 +291,7 @@
             data-aos-anchor-placement="center-bottom"
           >
             <span class="align-middle"
-              ><img src="./assets/app-4.png" alt="Lancio" class="img-fluid"
+              ><img src="./assets/img/app-4.png" alt="Lancio" class="img-fluid"
             /></span>
           </div>
           <div
@@ -235,8 +308,11 @@
               Puedes interactuar con ella entrando a axakeralty.mx
             </h5>
             <div class="cta-container">
-              <a href="/" class="primary-line-btn b-red t-red"
-                ><i class="far fa-file-alt" aria-hidden="true"></i>Consulta
+              <a
+                href="https://axakeralty.mx/home"
+                target="_blank"
+                class="primary-btn"
+                ><i class="fa fa-comments-o" aria-hidden="true"></i>Consulta
                 ahora</a
               >
             </div>
@@ -247,103 +323,15 @@
     <!-- Section Ends -->
 
     <!-- Section -->
-    <div class="section dark back five half-padding">
+    <!--div class="section dark back five half-padding">
       <div class="container">
-        <!-- Testimonials -->
         <div
           class="testimonial-container aos-init"
           data-aos="fade-down"
           data-aos-anchor-placement="center-bottom"
-        >
-          <div id="t-item" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li
-                data-target="#t-item"
-                data-slide-to="0"
-                class="blue-vibrant active"
-              ></li>
-              <li
-                data-target="#t-item"
-                data-slide-to="1"
-                class="blue-vibrant"
-              ></li>
-              <li
-                data-target="#t-item"
-                data-slide-to="2"
-                class="blue-vibrant"
-              ></li>
-            </ol>
-            <div class="carousel-inner content">
-              <!-- Testimonial Item -->
-              <div class="carousel-item active">
-                <div class="item">
-                  <div class="img center">
-                    <img
-                      src="./assets/user2.jpg"
-                      alt="Lancio"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="icon t-white">
-                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                  </div>
-                  <div class="text t-white">
-                    Lancio is a must-have tool. Maybe one of the best product
-                    launch templates so far in the market. Recommended 100%.
-                  </div>
-                  <div class="name t-blue-vibrant">MARIA De ANDRE'</div>
-                  <div class="role t-light-blue">Artist</div>
-                </div>
-              </div>
-
-              <!-- Testimonial Item -->
-              <div class="carousel-item">
-                <div class="item">
-                  <div class="img center">
-                    <img
-                      src="./assets/user1.jpg"
-                      alt="Lancio"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="icon t-white">
-                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                  </div>
-                  <div class="text t-white">
-                    Extremelly flexible and easy to use. Code is clean and all
-                    files well organized. Great job guys.
-                  </div>
-                  <div class="name t-blue-vibrant">JOHN E. PERRY</div>
-                  <div class="role t-light-blue">Moravian Ltd - CEO</div>
-                </div>
-              </div>
-
-              <!-- Testimonial Item -->
-              <div class="carousel-item">
-                <div class="item">
-                  <div class="img center">
-                    <img
-                      src="./assets/user3.jpg"
-                      alt="Lancio"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="icon t-white">
-                    <i class="fas fa-quote-right" aria-hidden="true"></i>
-                  </div>
-                  <div class="text t-white">
-                    Fast, easy, reliable, fun, flexible, modern. Many options,
-                    colors, widgets. +++
-                  </div>
-                  <div class="name t-blue-vibrant">LINDA FALANGY</div>
-                  <div class="role t-light-blue">Graphic Designer</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        ></div>
       </div>
-    </div>
+    </div-->
     <!-- Section Ends -->
 
     <!-- Section -->
@@ -354,58 +342,51 @@
           data-aos="fade-down"
           data-aos-anchor-placement="center-bottom"
         >
-          Price Packages Plans.
+          Conoce nuestras facilidades de pago.
         </h1>
         <h5
           class="center aos-init"
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
         >
-          Upgrade to a Pro plan and get more features, styles, kits, &amp;
-          actual human tech support.
+          Conoce nuestros planes, y adquiere tu
+          <img src="assets/logos/logo-gray.svg" width="80px" /> a 3, 6 y 12
+          meses <br />sin intereses. Empieza a disfrutar de los beneficios que
+          Planmed U trae para ti.
         </h5>
         <div class="content row center price-plans-container">
           <!-- Price Table -->
           <div
-            class="col-lg-4 aos-init"
+            class="col-lg-6 aos-init"
             data-aos="fade-right"
             data-aos-anchor-placement="center-bottom"
           >
             <div class="info-box white">
-              <div class="t-dark mini-title">Free</div>
+              <div class="t-dark mini-title">Pago Mensual</div>
               <div class="price t-blue-vibrant">
-                <span class="currency">$</span>0<span class="value">/mo</span>
+                <span class="currency">$</span>46.41<span class="value"
+                  >/adulto</span
+                >
+              </div>
+              <div class="price t-blue-vibrant">
+                <span class="currency">$</span>36.92<span class="value"
+                  >/menor de edad</span
+                >
               </div>
               <ul class="highlights">
                 <li class="hg-item t-dark">
-                  <i class="fas fa-check t-green" aria-hidden="true"></i> Create
-                  unique websites
+                  <i class="fas fa-check t-green" aria-hidden="true"></i> Puedes
+                  pagar en una sóla exhibición
                 </li>
-                <li class="hg-item t-dark">
-                  <i class="fas fa-check t-green" aria-hidden="true"></i> Built
-                  in Boostrap 4
-                </li>
-                <li class="hg-item not-included t-dark">
-                  <i class="fas fa-times t-red" aria-hidden="true"></i> Stunning
-                  ready colors
-                </li>
-                <li class="hg-item not-included t-dark">
-                  <i class="fas fa-times t-red" aria-hidden="true"></i>
-                  Limiteless variations
-                </li>
-                <li class="hg-item not-included t-dark">
-                  <i class="fas fa-times t-red" aria-hidden="true"></i> Optimize
-                  all your efforts
-                </li>
-                <li class="hg-item t-dark">
-                  <i class="fas fa-check t-green" aria-hidden="true"></i> Basic
-                  Support
+                <li class="hg-item not-included">
+                  <i class="fas fa-times t-red" aria-hidden="true"></i> Puedes
+                  diferir tu pago a 3, 6, y 12 meses sin intereses.
                 </li>
                 <li class="hg-item">
                   <a
-                    href="/"
+                    href="formulario.html"
                     class="primary-line-btn b-blue-vibrant t-blue-vibrant"
-                    >Get Started</a
+                    >Activar Beneficios</a
                   >
                 </li>
               </ul>
@@ -415,96 +396,36 @@
 
           <!-- Price Table Featured-->
           <div
-            class="col-lg-4 aos-init"
+            class="col-lg-6 aos-init"
             data-aos="fade-down"
             data-aos-anchor-placement="center-bottom"
           >
             <div class="info-box dark featured">
               <span class="top-border blue-vibrant"></span>
-              <div class="t-white mini-title">Basic</div>
+              <div class="t-white mini-title">Pago Anual</div>
               <div class="price t-white">
-                <span class="currency">$</span>9,99<span class="value"
-                  >/mo</span
+                <span class="currency">$</span>559.41<span class="value"
+                  >/adulto</span
+                >
+              </div>
+              <div class="price t-white">
+                <span class="currency">$</span>439.22<span class="value"
+                  >/adulto</span
                 >
               </div>
               <ul class="highlights">
                 <li class="hg-item t-light-blue">
-                  <i class="fas fa-check t-green" aria-hidden="true"></i> Create
-                  unique websites
-                </li>
-                <li class="hg-item t-light-blue">
-                  <i class="fas fa-check t-green" aria-hidden="true"></i> Built
-                  in Boostrap 4
-                </li>
-                <li class="hg-item t-light-blue">
                   <i class="fas fa-check t-green" aria-hidden="true"></i>
-                  Stunning ready colors
-                </li>
-                <li class="hg-item t-light-blue not-included">
-                  <i class="fas fa-times t-red" aria-hidden="true"></i>
-                  Limiteless variations
-                </li>
-                <li class="hg-item t-light-blue not-included">
-                  <i class="fas fa-times t-red" aria-hidden="true"></i> Optimize
-                  all your efforts
+                  Puedes pagar en una sola exhibición.
                 </li>
                 <li class="hg-item t-light-blue">
-                  <i class="fas fa-check t-green" aria-hidden="true"></i>
-                  Premium Support
+                  <i class="fas fa-check t-green" aria-hidden="true"></i> Puedes
+                  diferir tu pago a 3, 6, 9 y 12 meses sin intereses.
                 </li>
+
                 <li class="hg-item">
                   <a href="/" class="primary-btn blue-vibrant t-white"
-                    >Get Started</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- End -->
-
-          <!-- Price Table -->
-          <div
-            class="col-lg-4 aos-init"
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-          >
-            <div class="info-box white">
-              <div class="t-dark mini-title">Premium</div>
-              <div class="price t-blue-vibrant">
-                <span class="currency">$</span>19,99<span class="value"
-                  >/mo</span
-                >
-              </div>
-              <ul class="highlights">
-                <li class="hg-item t-dark">
-                  <i class="fas fa-check t-green" aria-hidden="true"></i> Create
-                  unique websites
-                </li>
-                <li class="hg-item t-dark">
-                  <i class="fas fa-check t-green" aria-hidden="true"></i> Built
-                  in Boostrap 4
-                </li>
-                <li class="hg-item t-dark">
-                  <i class="fas fa-check t-green" aria-hidden="true"></i>
-                  Stunning ready colors
-                </li>
-                <li class="hg-item t-dark">
-                  <i class="fas fa-check t-green" aria-hidden="true"></i>
-                  Limiteless variations
-                </li>
-                <li class="hg-item t-dark">
-                  <i class="fas fa-check t-green" aria-hidden="true"></i>
-                  Optimize all your efforts
-                </li>
-                <li class="hg-item t-dark">
-                  <i class="fas fa-check t-green" aria-hidden="true"></i>
-                  Premium Support
-                </li>
-                <li class="hg-item">
-                  <a
-                    href="/"
-                    class="primary-line-btn b-blue-vibrant t-blue-vibrant"
-                    >Get Started</a
+                    >Activar Beneficios</a
                   >
                 </li>
               </ul>
@@ -522,7 +443,7 @@
         <div class="content row">
           <div class="col-lg-6">
             <span class="align-middle"
-              ><img src="./assets/app-5.png" alt="Lancio" class="img-fluid"
+              ><img src="./assets/img/app-5.png" alt="Lancio" class="img-fluid"
             /></span>
           </div>
           <div
@@ -531,21 +452,20 @@
             data-aos-anchor-placement="center-bottom"
           >
             <div class="featured-icon">
-              <i class="fas fa-spinner t-blue-vibrant" aria-hidden="true"></i>
+              <i class="fa fa-comments-o t-blue-vibrant" aria-hidden="true"></i>
             </div>
             <h3>
-              Take <mark><span class="t-red">.</span>Lancio</mark> for a Spin
+              ¿Qué necesitas hacer <br />para acceder a la
+              <mark>videoconsulta</mark>?
             </h3>
             <p>
-              We understand how overwhelming launching a business can be. This
-              is why we've developed the easiest and fastest way to launch your
-              product.
+              Para agendar tu cita llámanos al:
+              <a href="tel:5551693080">(55) 5169 3080</a>, opción 4<br />
+              <mark>Horarios de atención:</mark><br />
+              Lunes a Viernes: De 9:00 a 19:00 horas.<br />
+              Sábados: De 9:00 a 15:00 horas.
             </p>
-            <h4 class="t-blue-vibrant">Give us a try!</h4>
-            <p>
-              Take a quick look at the top features. <br />We promise you won't
-              regret it.
-            </p>
+            <h4 class="t-blue-vibrant">Para tu videoconsulta necesitas:</h4>
             <ul
               data-aos="fade-down"
               data-aos-anchor-placement="center-bottom"
@@ -553,23 +473,15 @@
             >
               <li>
                 <i class="fas fa-check t-blue-vibrant" aria-hidden="true"></i>
-                Create unique websites
+                Cuenta de correo electrónico personal Gmail
               </li>
               <li>
                 <i class="fas fa-check t-blue-vibrant" aria-hidden="true"></i>
-                Built in Boostrap 4
+                Acceso a Google Meet
               </li>
               <li>
                 <i class="fas fa-check t-blue-vibrant" aria-hidden="true"></i>
-                Stunning ready colors
-              </li>
-              <li>
-                <i class="fas fa-check t-blue-vibrant" aria-hidden="true"></i>
-                Limiteless variations
-              </li>
-              <li>
-                <i class="fas fa-check t-blue-vibrant" aria-hidden="true"></i>
-                Optimize all your efforts
+                Dispositivo con acceso a cámara y micrófono
               </li>
             </ul>
           </div>
@@ -587,46 +499,189 @@
           data-aos-anchor-placement="center-bottom"
         >
           <h3>
-            Want to know more about
-            <mark class="light-yellow t-dark"
-              ><span class="t-red">.</span>Lancio</mark
-            >?
+            Consulta los <mark class="light-yellow t-dark">detalles</mark>
           </h3>
-          <p class="center">Subscribe our newsletter for occasional updates.</p>
-          <div id="fields">
-            <!-- CONTACT Form-->
-            <form
-              id="contact-form"
-              method="POST"
-              action="http://www.schintudesign.com/envato/lancio/php/contact.php"
-              role="form"
-              novalidate="true"
-            >
-              <div id="note" class="messages t-snow"></div>
-              <div class="controls center">
-                <!-- form-group-->
-                <div class="form-group">
-                  <input
-                    id="form_email"
-                    type="email"
-                    name="email"
-                    class="form-control light-grey"
-                    placeholder="Email address*"
-                    required="required"
-                    data-error="Valid email is required."
-                  />
-                  <input
-                    type="submit"
-                    name="submit"
-                    id="submit"
-                    class="primary-btn blue-vibrant disabled"
-                    value="Notify Me"
-                  />
-                  <div class="help-block with-errors"></div>
+          <p class="center">
+            Para conocer más, selecciona las siguientes opciones: <br />
+          </p>
+          <!-- Accordion -->
+          <div class="accordion mt-30" id="faq">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0 text-left pb-0 pt-0">
+                  <button
+                    class="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    ¿Qué hago después de agendar?
+                  </button>
+                </h5>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse"
+                aria-labelledby="headingOne"
+                data-parent="#faq"
+              >
+                <div class="card-body text-left">
+                  <p>
+                    1.- Una vez agendada tu videoconsulta, recibirás la
+                    confirmación de la cita en el correo electrónico que
+                    registraste. En dicho correo también encontrarás las
+                    instrucciones y requerimientos técnicos para poder realizar
+                    la videollamada con nuestros profesionales de salud<br />
+                    2.- Si es la primera vez que tienes una consulta con los
+                    médicos de AXA Keralty, minutos antes de la llamada serás
+                    contactado por nuestro equipo para completar información
+                    importante<br />
+                    3.- Ingresa a la liga que recibiste en el correo de
+                    confirmación, para hacerlo requieres tener instalada la
+                    aplicación de Google Meet (disponible desde Google Play para
+                    Android y App Store para iOS), también puedes conectarte
+                    desde tu computadora<br />
+                    4.- Disfruta tu videoconsulta
+                  </p>
                 </div>
               </div>
-            </form>
-            <!-- END CONTACT Form-->
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0 text-left pb-0 pt-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    ¿Que hago después de la consulta?
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#faq"
+              >
+                <div class="card-body text-left">
+                  <p>
+                    Una vez finalizada, y en caso de requerirlo, recibirás un
+                    correo electrónico que puede incluir alguno o varios de los
+                    siguientes documentos:<br />
+                    -Receta médica<br />
+                    -Orden de estudios<br />
+                    -Referencia a otro de nuestros médicos<br />
+                    En caso de que requieras agendar un servicio adicional
+                    derivado de tu videoconsulta, reenvía el correo que
+                    recibiste a servicio@axakeralty.mx y nuestro equipo se
+                    pondrá en contacto contigo para ayudarte.<br />
+                    En caso de tener Planmed, y los servicios derivados de la
+                    videoconsulta estén cubiertos, no será necesario realizar un
+                    pago por los mismos.<br />
+                    Además, para el surtido de medicamentos contamos con precios
+                    preferenciales.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0 text-left pb-0 pt-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    ¿Qué necesito para tener una mejor experiencia en tu
+                    videoconsulta?
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#faq"
+              >
+                <div class="card-body text-left">
+                  <p>
+                    1. Descarga la aplicación de Google Meet (disponible desde
+                    Google Play para Android y App Store para iOS) o conéctate
+                    desde tu computadora<br />
+                    2. Inicia sesión en Google Meet<br />
+                    3. ¿Tienes dudas sobre Google Meet y más información sobre
+                    compatibilidad con tu dispositivo? da click aquí<br />
+                    4. Te recomendamos utilizar Google Meet con dispositivos
+                    personales, ya que en muchos casos los dispositivos de tu
+                    empresa cuentan con restricciones para el uso de estas
+                    herramientas<br />
+                    5. Prueba tu cámara web y micrófono<br />
+                    6. Asegúrate de tener un volumen adecuado en tu equipo<br />
+                    7. Verifica tu conexión a internet<br />
+                    8. Asegúrate de tener la última versión de tu navegador<br />
+                    9. Viste con ropa cómoda<br />
+                    10. Para nosotros es importante cumplir con la puntualidad
+                    en todas nuestras consultas, procura estar dentro de los
+                    primeros 10 minutos de tu cita para no cancelarla y así no
+                    afectar a otros clientes que también esperan nuestro
+                    apoyo<br />
+                    ¿Tienes dudas o necesitas orientación sobre cualquier
+                    tema?<br />
+
+                    Escríbenos a servicio@axakeralty.mx donde con gusto te
+                    apoyaremos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0 text-left pb-0 pt-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    ¿Qué necesito para la Vinculación a prueba de COVID-19?
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseFour"
+                class="collapse"
+                aria-labelledby="headingFour"
+                data-parent="#faq"
+              >
+                <div class="card-body text-left">
+                  <p>
+                    Necesitas contar con: <br />- Previa referencia médica de un
+                    médico de AXA Keralty. Limitado a CDMX y Área
+                    Metropolitana<br />
+                    a) El médico atiende al usuario en videoconsulta<br />
+                    b) Si el usuario presenta síntomas de COVID-19 se entregará
+                    una orden médica indicando que llame al número de atención a
+                    clientes 55 5169 3080, opción 2 <br />c) A través del centro
+                    de atención a clientes, se brindarán los números de contacto
+                    de los proveedores en convenio <br />d) El usuario será el
+                    encargado de gestionar y coordinar la cita y el pago
+                    correspondiente del estudio
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -634,29 +689,47 @@
     <!-- Section Ends -->
 
     <!-- Section -->
-    <div class="section dark back three">
+    <div class="dark">
       <div
         class="container aos-init"
         data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"
-      >
-        <h1 class="t-white center">Join the community.</h1>
-        <h5 class="t-grey center">#applancio</h5>
-        <div class="cta-container center">
-          <a href="/" class="primary-line-btn b-pink t-pink"
-            ><i class="fab fa-instagram" aria-hidden="true"></i>Follow us on
-            Instagram</a
-          >
-          <a href="/" class="primary-line-btn b-blue-vibrant t-blue-vibrant"
-            ><i class="fab fa-facebook" aria-hidden="true"></i>Follow us on
-            Facebook</a
-          >
-        </div>
-      </div>
+      ></div>
       <!-- Footer -->
       <footer>
         <div class="copyright t-white center">
-          Todos los derechos reservados Planmed® U
+          Todos los derechos reservados Planmed® U<br />
+          “El servicio de videoconsulta es responsabilidad de los médicos y
+          profesionales de salud contratados por<br />Keralty México, S.A. de
+          C.V., o cualquier de sus filiales y/o subsidiarias (“Keralty México”).
+          Keralty México es una compañía distinta de AXA Seguros, S.A. de C.V.,
+          y AXA Salud, S.A. de C.V.”
+          <div class="container">
+            AXA Salud, S.A. de C.V., con domicilio en Avenida Félix Cuevas
+            número 366, piso 6, Colonia Tlacoquemécatl, Alcaldía Benito Juárez,
+            C.P. 03200, Ciudad de México, llevará a cabo el tratamiento de sus
+            datos personales para la cotización de su póliza y demás finalidades
+            contempladas en el aviso de privacidad integral, el cual puede
+            consultar en axakeralty.mx en la sección Aviso de Privacidad.
+          </div>
+        </div>
+        <div class="container">
+          <div class="content row center under-footer">
+            <div class="col-lg-4 d-flex">
+              <img
+                src="assets/logos/logo-white.svg"
+                style="max-width: 80px; margin-right: 10px"
+              />
+              <img src="assets/logos/logo-footer.png" style="max-width: 80px" />
+            </div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+              <img
+                src="assets/img/formas-de-pago.png"
+                style="max-width: 80px"
+              />
+            </div>
+          </div>
         </div>
       </footer>
     </div>
@@ -667,7 +740,6 @@
     <script src="./assets/bootstrap.min.js"></script>
     <script src="./assets/popper.min.js"></script>
     <script src="./assets/validator.min.js"></script>
-    <script src="./assets/contact.js"></script>
     <script src="./assets/main.js"></script>
     <script src="./assets/aos.js"></script>
     <!-- Launch AOS script -->
