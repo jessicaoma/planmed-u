@@ -486,9 +486,9 @@ footer .under-footer {
   text-align: center;
   margin-bottom: 50px;
 }
-@media (min-width: 900px) {
+@media (min-width: 1025px) {
   .app-container img {
-    max-width: 400px;
+    max-width: 470px;
   }
 }
 
@@ -918,6 +918,7 @@ label {
   .back.one,
   .back.two {
     background-image: none;
+    padding-bottom: 0;
   }
   #contact-form {
     width: 100%;

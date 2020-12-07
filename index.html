@@ -17,7 +17,6 @@
     <meta name="Resource-type" content="Document" />
 
     <!-- Upload Font "https://fonts.google.com/" -->
-    <link href="./assets/css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/bootstrap.min.css" />
     <!-- Styles CSS -->
@@ -25,11 +24,6 @@
     <!-- Load Font Awesome Kit -->
     <script src="./assets/747940bb1c.js"></script>
     <link rel="stylesheet" href="./assets/free.min.css" media="all" />
-    <link
-      rel="stylesheet"
-      href="./assets/free-v4-font-face.min.css"
-      media="all"
-    />
     <link rel="stylesheet" href="./assets/free-v4-shims.min.css" media="all" />
     <!-- Load Animate CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/animate.css" />
@@ -72,21 +66,18 @@
             data-aos="fade-right"
             data-aos-anchor-placement="center-bottom"
           >
-            <h2 class="d-none d-sm-block t-blue-two">
-              ¡Ahora puedes cuidar tu salud sin salir de casa!
+            <h2 class="d-none d-sm-block d-md-block t-blue-two">
+              ¿Sabías que...? Ahora puedes contar con un Plan de Salud al
+              alcance de tus manos
             </h2>
-            <h3 class="d-none d-sm-block">
-              <mark class="light-yellow">Beneficios exclusivos</mark> para
-              socios conductores y socios repartidores registrados en la app de
-              Uber.
+            <h3 class="d-none d-sm-block d-md-block">
+              <mark class="light-yellow">Beneficios exclusivos</mark> para ti
+              socio conductor y repartidor registrados en la app de Uber y sus
+              familiares.
             </h3>
-            <h5>
-              La situación actual nos obliga a cuidarnos los unos a los otros y
-              por eso tenemos algo que protegerá tu salud y la de tus seres
-              queridos, sin tener que salir de casa.
-            </h5>
+            <h5>Imagina poder consultar al médico estés dónde estés.</h5>
             <div class="cta-container">
-              <a href="/" class="primary-btn t-white"
+              <a href="formulario.html" class="primary-btn t-white"
                 ><i class="fa fa-check-square-o" aria-hidden="true"></i>Activa
                 Beneficios</a
               >
@@ -106,17 +97,17 @@
             <div class="app-container">
               <img
                 src="assets/logos/logo-gray.svg"
-                class="d-xl-none"
+                class="d-xl-none d-lg-none"
                 alt="Planmed®"
                 style="max-width: 64%"
               />
-              <h2 class="d-xl-none t-blue-two">
+              <h2 class="d-xl-none d-lg-none t-blue-two">
                 ¡Ahora puedes cuidar tu salud sin salir de casa!
               </h2>
-              <h3 class="d-xl-none">
+              <h3 class="d-xl-none d-lg-none">
                 <mark class="light-yellow">Beneficios exclusivos</mark> para
                 socios conductores y socios repartidores registrados en la app
-                de Uber.
+                de Uber y sus familiares.
               </h3>
               <div id="nav-item" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -159,6 +150,40 @@
     </div>
     <!-- Section Ends -->
 
+    <!-- Section Video -->
+    <div class="section light-grey" id="video">
+      <div class="container">
+        <div class="content row center">
+          <div
+            class="col-lg-12 aos-init"
+            data-aos="fade-down"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <h1 style="margin-bottom: 3rem">
+              ¡Es tan fácil como aceptar un viaje!
+            </h1>
+          </div>
+        </div>
+        <div class="content row center justify-content-md-center">
+          <div
+            class="col-lg-8 aos-init flex-"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <iframe
+              width="100%"
+              height="515"
+              src="https://www.youtube.com/embed/VfK5buyra1Y"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section Ends -->
+
     <!-- Section Beneficios -->
     <div class="section light-grey" id="beneficios">
       <div class="container">
@@ -173,63 +198,84 @@
         </div>
         <div class="content row center">
           <div
-            class="col-lg-3 aos-init"
+            class="col-lg-6 aos-init"
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
           >
             <div class="info-box white">
               <div class="t-blue-vibrant">
-                <img src="assets/icons/001-video.svg" width="50px" />
+                <img src="assets/icons/001-video.svg" width="100px" />
               </div>
-              <h4>4 videoconsultas al año con médico general y/o pediatra.</h4>
+              <h4>
+                4 videoconsultas al año <br />con médico general y/o pediatra.
+              </h4>
               <p>
                 Consultas con los expertos en salud de AXA Keralty desde
-                cualquier lugar
+                cualquier lugar.
               </p>
             </div>
           </div>
           <div
-            class="col-lg-3 aos-init"
+            class="col-lg-6 aos-init"
             data-aos="fade-down"
             data-aos-anchor-placement="center-bottom"
           >
             <div class="info-box">
               <div class="t-blue-vibrant">
-                <img src="assets/icons/004-descuento.svg" width="50px" />
+                <img src="assets/icons/004-descuento.svg" width="100px" />
               </div>
-              <h4>30% de Descuento<br />en Consultas</h4>
-              <p>Disfruta de consultas subsecuentes con el 30% de descuento</p>
+              <h4>30% de descuento<br />en consultas</h4>
+              <p>
+                Accede a consultas de nutrición, psicología o internista con
+                costo preferencial.
+              </p>
             </div>
           </div>
           <div
-            class="col-lg-3 aos-init"
+            class="col-lg-4 aos-init"
             data-aos="fade-down"
             data-aos-anchor-placement="center-bottom"
           >
             <div class="info-box white">
               <div class="t-blue-vibrant">
-                <img src="assets/icons/002-farmacia.svg" width="50px" />
+                <img src="assets/icons/002-farmacia.svg" width="100px" />
               </div>
               <h4>Descuentos en farmacias</h4>
               <p>
-                Descuentos en farmacias y envío de medicamentos a domicilio con
-                receta digital.
+                Aprovecha los descuentos exclusivos en farmacias y envío de
+                medicamentos a domicilio.
               </p>
             </div>
           </div>
           <div
-            class="col-lg-3 aos-init"
+            class="col-lg-4 aos-init"
             data-aos="fade-down"
             data-aos-anchor-placement="center-bottom"
           >
             <div class="info-box">
               <div class="t-blue-vibrant">
-                <img src="assets/icons/003-covid.svg" width="50px" />
+                <img src="assets/icons/003-covid.svg" width="100px" />
               </div>
               <h4>Vinculación a prueba de Covid-19</h4>
               <p>
-                Con previa referencia médica de un médico de AXA Keralty.
-                Limitado a CDMX y Área Metropolitana
+                Asesoría para agilizar tu prueba COVID-19, con previa referencia
+                médica. Limitado a CDMX y Área Metropolitana.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 aos-init"
+            data-aos="fade-down"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <div class="info-box white">
+              <div class="t-blue-vibrant">
+                <img src="assets/icons/005-nurse.svg" width="100px" />
+              </div>
+              <h4>Lupita: Asistente Virtual</h4>
+              <p>
+                Puedes chatear con ella entrando a axakeralty.mx y recibir
+                información respecto al COVID-19
               </p>
             </div>
           </div>
@@ -239,7 +285,7 @@
     <!-- Section Ends -->
 
     <!-- Section -->
-    <div class="section dark back three">
+    <div class="section back three">
       <div class="container">
         <div class="content row flex-xs-row-reverse">
           <div
@@ -247,11 +293,11 @@
             data-aos="fade-left"
             data-aos-anchor-placement="center-bottom"
           >
-            <h1 class="t-white">
+            <h1 class="t-dark">
               ¡Habla con un doctor
               <span class="t-blue-vibrant">sin salir de casa</span>!
             </h1>
-            <h5 class="t-white">
+            <h5 class="t-dark">
               Si activas tus beneficios, podrás acceder a nuestra nueva
               modalidad de cuatro videoconsultas y chatbot de COVID-19 para que
               cuides tu salud sin salir de casa.<br />¡Cuidemos la salud de
@@ -262,9 +308,9 @@
                 href="https://axakeralty.mx/home"
                 target="_blank"
                 class="primary-btn"
-                ><i class="fa fa-check-square-o" aria-hidden="true"></i>Activar
-                beneficios</a
-              >
+                ><i class="fa fa-check-square-o" aria-hidden="true"></i>Agendar
+                cita
+              </a>
             </div>
           </div>
           <div
@@ -352,7 +398,7 @@
           Conoce nuestros planes, y adquiere tu
           <img src="assets/logos/logo-gray.svg" width="80px" /> a 3, 6 y 12
           meses <br />sin intereses. Empieza a disfrutar de los beneficios que
-          Planmed U trae para ti.
+          traemos para ti.
         </h5>
         <div class="content row center price-plans-container">
           <!-- Price Table -->
@@ -715,15 +761,15 @@
         </div>
         <div class="container">
           <div class="content row center under-footer">
-            <div class="col-lg-4 d-flex">
+            <div class="col-lg-4 col-xs-12 center">
               <img
                 src="assets/logos/logo-white.svg"
                 style="max-width: 80px; margin-right: 10px"
               />
               <img src="assets/logos/logo-footer.png" style="max-width: 80px" />
             </div>
-            <div class="col-lg-4"></div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-xs-12 center"></div>
+            <div class="col-lg-4 col-xs-12 center">
               <img
                 src="assets/img/formas-de-pago.png"
                 style="max-width: 80px"
@@ -742,6 +788,7 @@
     <script src="./assets/validator.min.js"></script>
     <script src="./assets/main.js"></script>
     <script src="./assets/aos.js"></script>
+    <script src="./assets/steps.js"></script>
     <!-- Launch AOS script -->
     <script>
       AOS.init();
